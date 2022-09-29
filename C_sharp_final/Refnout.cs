@@ -1,17 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace C_sharp_final
 {
     internal class Refnout
     {
         public static void add(ref int y)
         {
-             y = 100;
+            //no need to declare value y
             
+        }
+        public static int add1(out int y)
+        {//must declare value for y
+            y = 19;
+            return y;
         }
 
         public static void Main()
@@ -20,7 +20,12 @@ namespace C_sharp_final
             int b = 10;
             add(ref b);
             Console.WriteLine(b);
-            // Refnout.add(ref a);
+            int c = 100;
+            
+            add1(out c);
+            Console.WriteLine(c);
+
+            
         }
     }
 }

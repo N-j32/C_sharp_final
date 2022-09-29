@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>C_sharp_final.Refnout</StartupObject>
+    <StartupObject>C_sharp_final.Multidim</StartupObject>
   </PropertyGroup>
 
 </Project>
